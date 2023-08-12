@@ -1,0 +1,30 @@
+create database medi_helps;
+
+use medi_helps;
+ 
+CREATE TABLE contact_us (
+    ->     id INT AUTO_INCREMENT PRIMARY KEY,
+    ->     name VARCHAR(100) NOT NULL,
+    ->     email VARCHAR(100) NOT NULL,
+    ->     message TEXT NOT NULL);
+
+CREATE TABLE donations (
+    ->     id INT AUTO_INCREMENT PRIMARY KEY,
+    ->     medicine_name VARCHAR(255) NOT NULL,
+    ->     expiry_date DATE NOT NULL,
+    ->     quantity INT NOT NULL,
+    ->     donor_name VARCHAR(255) NOT NULL,
+    ->     email VARCHAR(255) NOT NULL,
+    ->     phone VARCHAR(20) NOT NULL,
+    ->     address VARCHAR(255) NOT NULL,
+    ->     city VARCHAR(100) NOT NULL,
+    ->     state VARCHAR(100) NOT NULL,
+    ->     pincode VARCHAR(10) NOT NULL
+    -> );
+
+CREATE TABLE sign_up (
+    ->     id INT AUTO_INCREMENT PRIMARY KEY,
+    ->     username VARCHAR(50) NOT NULL,
+    ->     password VARCHAR(255) NOT NULL,
+    ->     email VARCHAR(100) NOT NULL
+    -> );

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Medi - Helps - Donate Medicine</title>
+    <script src="jquery-3.7.0.js"></script>
+    <style>
+
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #060606;
+            padding: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 50px;
+            font-weight: 1000;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        nav li {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        nav li:first-child {
+            margin-left: 270px;
+        }
+
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 20px;
+            transition: all 0.3s ease-in-out;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding-left: 20px;
+            font-weight: 700;
+            padding-right: 0px;
+        }
+
+        nav a:hover {
+            color: #FFC72C;
+        }
+
+        .hmm {
+            background-color: #fefaf0;
+        }
+
+
+        footer {
+            background-color: #4CAF50;
+            color: #000000;
+            padding: 20px;
+            text-align: center;
+            font-weight: 800;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .donate-form {
+            background-color: #F2F2F2;
+            border-radius: 35px;
+            padding: 40px;
+            text-align: justify;
+            line-height: 1.5;
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0px 0px 5px 0px rgba(73, 73, 73, 0.2);
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .donate-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .donate-form input[type="text"],
+        .donate-form input[type="email"],
+        .donate-form input[type="tel"],
+        .donate-form input[type="date"],
+        .donate-form input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #CCC;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .donate-form button[type="submit"] {
+            background-color: #0047AB;
+            color: #FFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            width: 100%;
+        }
+
+        .donate-form button[type="submit"]:hover {
+            background-color: #FFC72C;
+        }
+    </style>
+</head>
+
+<body class="hmm">
+
+<header>
+    <a href="home1.html"><img src="medi.jpeg" alt="icon" width="100" height="100" style="padding: 10px;"></a>
+    <nav>
+        <ul>
+            <li><a href="home1.html">Home</a></li>
+            <li><a href="donate.html">Donate Medicine</a></li>
+            <li><a href="request_medicine.html">Request Medicine</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<br><br>
+
+
+<div class="donate-form">
+    <h2 style="text-align: center;">Donate Medicine</h2>
+
+    <form action="donate.php" method="post">
+        <label for="medicine-name">Medicine Name:</label>
+        <input type="text" id="medicine-name" name="medicine-name" required>
+
+        <label for="expiry-date">Expiry Date:</label>
+        <input type="date" id="expiry-date" name="expiry-date" required>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+
+        <label for="donor-name">Donor Name:</label>
+        <input type="text" id="donor-name" name="donor-name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="phone">Address</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="phone">City</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="phone">State</label>
+        <input type="text" id="state" name="state" required>
+
+        <label for="phone">Pincode</label>
+        <input type="text" id="pincode" name="pincode" required>
+
+        <br><br><br>
+
+        <button type="submit" style="padding: 20px; border-radius: 30px;">Donate Now</button>
+        
+    </form>
+</div>
+<br><br>
+
+<footer>
+    <p>&copy; 2023 Medi - Helps. All rights reserved.</p>
+    <p>Group 16</p>
+</footer>
+
+
+</body>
+
+</html>
